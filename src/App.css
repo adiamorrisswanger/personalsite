@@ -1,4 +1,42 @@
-.App {
+
+.home {
+  margin: auto;
+  padding: 50px;
+  border: 20px;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+.home-title {
+  margin:auto;
+  font-weight: bold;
+  font-size: large;
+  color:#000000;
+}
+
+.header-background {
+  background-color: white;
+}
+
+/* FONTS */
+
+.h1 {
+  font-size: 36px;
+}
+
+.h2 {
+  font-size: 24px;
+}
+
+.h3 {
+  font-size: 18px;
+}
+
+.p {
+  font-family: 'Oswald', 'Open Sans', sans-serif;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -36,3 +74,4 @@
     transform: rotate(360deg);
   }
 }
+ */
