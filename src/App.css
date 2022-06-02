@@ -5,20 +5,50 @@
   border: 20px;
   text-align: center;
   background-color: #FFFFFF;
+  font-family: 'Oswald', 'Open Sans', sans-serif;
+  
 }
 
-.home-title {
-  margin:auto;
-  font-weight: bold;
-  font-size: large;
-  color:#000000;
-}
 
-.header-background {
+.header {
   background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 10px;
 }
 
+a:link {
+  color: #3a3b42; 
+}
+/* Figure out why this is still blue. */
+a:hover {
+  color: #000000;
+}
+
+a:active {
+  color: #3a3b42;
+}
+
+/* .navbar {
+  color: #3a3b42;
+  margin: auto;
+  padding: 20px;
+  border: 10px;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #3a3b42;
+} */
+
+.a {
+  text-decoration: none;
+}
 /* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;400&display=swap');
+
+
 
 .h1 {
   font-size: 36px;
@@ -33,7 +63,7 @@
 }
 
 .p {
-  font-family: 'Oswald', 'Open Sans', sans-serif;
+  font-size: 14px;
 }
 
 /* .App {
