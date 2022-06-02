@@ -1,14 +1,13 @@
 
 .home {
   margin: auto;
-  padding: 50px;
-  border: 20px;
+  padding: 200px;
+  border: 50px;
   text-align: center;
   background-color: #FFFFFF;
   font-family: 'Oswald', 'Open Sans', sans-serif;
   
 }
-
 
 .header {
   background-color: white;
@@ -17,8 +16,15 @@
   border: 10px;
 }
 
+.portfolio {
+  margin: 200px;
+  border: 50px;
+
+}
+
 a:link {
   color: #3a3b42; 
+  text-decoration: none;
 }
 /* Figure out why this is still blue. */
 a:hover {
@@ -27,6 +33,10 @@ a:hover {
 
 a:active {
   color: #3a3b42;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(151, 151, 151)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 /* .navbar {
@@ -41,9 +51,21 @@ a:active {
   color: #3a3b42;
 } */
 
-.a {
-  text-decoration: none;
+
+/* CARDS */
+.card-img-overlay .card-title {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.5);
+  
 }
+
+.card-img-overlay .card-subtitle {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.5);
+
+
+}
+
 /* FONTS */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;400&display=swap');
