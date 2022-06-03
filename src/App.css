@@ -75,21 +75,21 @@ a:active {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;400&display=swap');
 
 
-
+/* Figure out why this isn't changing */
 .h1 {
-  font-size: 36px;
+  font-size:x-large;
 }
 
 .h2 {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .h3 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .p {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 /* .App {

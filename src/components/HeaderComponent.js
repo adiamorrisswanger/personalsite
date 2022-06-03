@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, NavItem, NavbarToggler, Collapse, NavLink } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
     constructor(props) {
@@ -20,21 +21,24 @@ class Header extends Component {
 
     render() {
         return (
-                <Navbar sticky='top' expand='md' >
+                <Navbar sticky='top' expand='md' fluid>
                         <NavbarToggler onClick={this.toggleNav} />
                             <Collapse isOpen={this.state.isNavOpen} navbar>
                                 <Nav navbar>
                                     <NavItem>
-                                        <NavLink href='#' active>Home</NavLink>
+                                        <NavLink>
+                                            <Link to='/home' active>Home</Link>
+                                        </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink href='#'>Portfolio</NavLink>    
+                                        <NavLink>
+                                            <Link to='/portfolio'>Portfolio</Link>
+                                        </NavLink>    
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink href='#'>Resume</NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink href='#'>Contact</NavLink>
+                                        <NavLink>
+                                            <Link to='/contact'>Contact</Link>
+                                         </NavLink>
                                     </NavItem>
                                 </Nav>
                             </Collapse>

@@ -8,7 +8,7 @@ function Portfolio() {
             <div className='row'> 
                 <div className='col'>
                     <Card>
-                        <CardImg alt='' src='https://picsum.photos/200' width='100%' />
+                        <CardImg alt='' src='https://picsum.photos/200' width='100%' tabIndex={0}/>
                         <CardImgOverlay>
                             <CardTitle>
                                 Portfolio 1
@@ -18,14 +18,14 @@ function Portfolio() {
                             </CardSubtitle>
                         </CardImgOverlay>
                         <CardBody>
-                            <CardLink href='#'>Video Walkthrough</CardLink>
-                            <CardLink href='#'>GitHub Link</CardLink>
+                            <CardLink href='#' tabIndex={0}>Video Walkthrough</CardLink>
+                            <CardLink href='#' tabIndex={0}>GitHub Link</CardLink>
                         </CardBody>
                     </Card>
                 </div>
                 <div className='col'>
                     <Card>
-                        <CardImg alt='' src='https://picsum.photos/200' width='100%' />
+                        <CardImg alt='' src='https://picsum.photos/200' width='100%' tabIndex={0}/>
                         <CardImgOverlay>
                             <CardTitle>
                                 Portfolio 2
@@ -35,14 +35,14 @@ function Portfolio() {
                             </CardSubtitle>
                         </CardImgOverlay>
                         <CardBody>
-                            <CardLink href='#'>Video Walkthrough</CardLink>
-                            <CardLink href='#'>GitHub Link</CardLink>
+                            <CardLink href='#' tabIndex={0}>Video Walkthrough</CardLink>
+                            <CardLink href='#'tabIndex={0}>GitHub Link</CardLink>
                         </CardBody>
                     </Card>
                 </div>
                 <div className='col'>
                     <Card>
-                        <CardImg alt='' src='https://picsum.photos/200' width='100%' />
+                        <CardImg alt='' src='https://picsum.photos/200' width='100%' tabIndex={0}/>
                         <CardImgOverlay>
                             <CardTitle>
                                 Portfolio 3
@@ -52,8 +52,8 @@ function Portfolio() {
                             </CardSubtitle>
                         </CardImgOverlay>
                         <CardBody>
-                            <CardLink href='#'>Video Walkthrough</CardLink>
-                            <CardLink href='#'>GitHub Link</CardLink>
+                            <CardLink href='#' tabIndex={0}>Video Walkthrough</CardLink>
+                            <CardLink href='#' tabIndex={0}>GitHub Link</CardLink>
                         </CardBody>
                     </Card>
                 </div>
