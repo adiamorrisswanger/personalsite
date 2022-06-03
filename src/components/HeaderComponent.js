@@ -27,7 +27,7 @@ class Header extends Component {
                                 <Nav navbar>
                                     <NavItem>
                                         <NavLink>
-                                            <Link to='/home' active>Home</Link>
+                                            <Link to='/' active>Home</Link>
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>

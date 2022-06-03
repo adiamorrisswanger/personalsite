@@ -8,14 +8,16 @@ import { Routes, Route } from 'react-router-dom';
 
 
 function Main() {
+
+
     return (
         <div>
             <Header />
-            <Home />
             <Routes>
+                <Route index path='/' element={<Home />} />
                 <Route path='portfolio' element={<Portfolio />} />
                 <Route path='contact' element={<Contact />} />
-                <Route index path='home' element={<Home />} />
+                
             </Routes>
             <Footer />
         </div>
