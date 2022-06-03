@@ -1,34 +1,49 @@
-import React, { useState } from 'react';
+import React, { Component } from 'react';
 import { Nav, Navbar, NavItem, NavbarToggler, Collapse, NavLink } from 'reactstrap';
 
-function Header() {
-    const [isOpen, setIsOpen ] = useState(false);
-    const toggle = () => setIsOpen(!isOpen);
+class Header extends Component {
+    constructor(props) {
+        super(props);
 
-    return (
-        <div className='navbar'>
-            <Navbar expand='md'>
-                <div className='container'>
-                    <Collapse navbar isOpen={isOpen}  />
-                        <Nav navbar>
-                            <NavItem>
-                                <NavLink href='#' active>Home</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href='#'>Portfolio</NavLink>    
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href='#'>Resume</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href='#'>Contact</NavLink>
-                            </NavItem>
-                        </Nav>
-                    <NavbarToggler onClick={toggle} />
-                </div>
-            </Navbar>
-        </div>
-    )
+        this.state = {
+            isNavOpen: false,
+        };
+
+        this.toggleNav = this.toggleNav.bind(this)
+    };
+    
+    toggleNav() {
+        this.setState({
+            isNavOpen: !this.state.isNavOpen
+        });
+    }
+
+    render() {
+        return (
+                <Navbar sticky='top' expand='md' >
+                        <NavbarToggler onClick={this.toggleNav} />
+                            <Collapse isOpen={this.state.isNavOpen} navbar>
+                                <Nav navbar>
+                                    <NavItem>
+                                        <NavLink href='#' active>Home</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href='#'>Portfolio</NavLink>    
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href='#'>Resume</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href='#'>Contact</NavLink>
+                                    </NavItem>
+                                </Nav>
+                            </Collapse>
+                </Navbar>
+        )
+    }
+        
+    
+    
 }
 
 export default Header;

@@ -8,10 +8,10 @@ function Home() {
     const values = ['Dancer','Dog Trainer', 'Non Profit Admin', 'Actor', 'Choreographer', 'TV Host', 'Cater Waiter', 'Tour Guide', 'Office Manager', 'Education Director'];
 
     return (
-        <div className='home'>
+        <div className='home' tabIndex={0}>
             <div>
-                <h1>Adia Morris Swanger | Web Developer and...{title}</h1>
-                <Button outline color='info' onClick={() => setTitle(values[Math.floor(Math.random() * values.length)])}>Change It Up</Button>
+                <h1>Adia Morris Swanger | Web Developer <Button outline color='secondary' onClick={() => setTitle(values[Math.floor(Math.random() * values.length)])}>and...</Button> {title}</h1>
+                
             </div>
             
         </div>

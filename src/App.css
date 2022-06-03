@@ -22,6 +22,10 @@
 
 }
 
+.div {
+  padding: 20px;
+  margin: 10px;
+}
 a:link {
   color: #3a3b42; 
   text-decoration: none;
