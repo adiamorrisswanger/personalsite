@@ -19,9 +19,15 @@
 
 
 .footer {
-  margin: 20px;
-  padding: 20px;
-  border: 50px;
+  padding: 50px;
+  background-color: #3a3b42;
+  color: whitesmoke;
+}
+
+.footer div {
+  position: relative;
+  top: 20px;
+  left: 5px;
 }
 
 .div {
