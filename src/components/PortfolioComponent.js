@@ -1,54 +1,61 @@
 import React from 'react';
 import { Card, CardTitle, CardBody, CardSubtitle, CardLink, CardImgOverlay, CardImg } from 'reactstrap';
-import { Link } from 'react-router-dom';
 
-function RenderPortfolioItem({portfolio}) {
-
+function Portfolio() {
     return (
-        <Card>
-            <Link to={`portfolio/${portfolio.id}`}>
-                <CardImg src={portfolio.image} width='100%' tabIndex={0} alt={portfolio.description}/>
+<div className='row'> 
+                <div className='col'>
+                    <Card>
+                        <CardImg alt='' src='https://picsum.photos/200' width='100%' tabIndex={0}/>
                         <CardImgOverlay>
                             <CardTitle>
-                                {portfolio.title}
-                            </CardTitle>
+                                Portfolio 1
+                                </CardTitle>
                             <CardSubtitle>
-                                {portfolio.description}
+                                Description of Portfolio 1
                             </CardSubtitle>
                         </CardImgOverlay>
                         <CardBody>
                             <CardLink href='#' tabIndex={0}>Video Walkthrough</CardLink>
                             <CardLink href='#' tabIndex={0}>GitHub Link</CardLink>
                         </CardBody>
-            </Link>
-        </Card>
-    )
-
-
-}
-
-
-function Portfolio(props) {
-
-    const portfolio = props.portfolio.map(portfolio => {
-        return (
-            <div key={portfolio.id} className='col-md-6'>
-                <RenderPortfolioItem portfolio={{portfolio}}/>
-            </div>
-        )
-    })
-
-    return (
-        <div className='container'>
-            <div className='row'>
-                <h1>Projects</h1> 
-                <div className='col-md-5'>
-                    {portfolio}
+                    </Card>
+                </div>
+                <div className='col'>
+                    <Card>
+                        <CardImg alt='' src='https://picsum.photos/200' width='100%' tabIndex={0}/>
+                        <CardImgOverlay>
+                            <CardTitle>
+                                Portfolio 2
+                            </CardTitle>
+                            <CardSubtitle>
+                                Description of Portfolio 2
+                            </CardSubtitle>
+                        </CardImgOverlay>
+                        <CardBody>
+                        <CardLink href='#' tabIndex={0}>Video Walkthrough</CardLink>
+                            <CardLink href='#'tabIndex={0}>GitHub Link</CardLink>
+                        </CardBody>
+                    </Card>
+                </div>
+                <div className='col'>
+                    <Card>
+                    <CardImg alt='' src='https://picsum.photos/200' width='100%' tabIndex={0}/>
+                        <CardImgOverlay>
+                            <CardTitle>
+                                Portfolio 3
+                            </CardTitle>
+                            <CardSubtitle>
+                                Description of Portfolio 3
+                            </CardSubtitle>
+                        </CardImgOverlay>
+                        <CardBody>
+                        <CardLink href='#' tabIndex={0}>Video Walkthrough</CardLink>
+                            <CardLink href='#' tabIndex={0}>GitHub Link</CardLink>
+                        </CardBody>
+                    </Card>
                 </div>
             </div>
-        </div>
-    )
-}
-
-
+    );
+};
 export default Portfolio;

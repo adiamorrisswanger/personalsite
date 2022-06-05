@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, NavItem, NavbarToggler, Collapse, NavLink } from 'reactstrap';
-import { Link } from 'react-router-dom';
+
 
 class Header extends Component {
     constructor(props) {
@@ -26,18 +26,18 @@ class Header extends Component {
                             <Collapse isOpen={this.state.isNavOpen} navbar>
                                 <Nav navbar>
                                     <NavItem>
-                                        <NavLink>
-                                            <Link to='/' active>Home</Link>
+                                        <NavLink href='/' active>
+                                            Home
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink>
-                                            <Link to='/portfolio'>Portfolio</Link>
+                                        <NavLink href='/portfolio'>
+                                            Portfolio
                                         </NavLink>    
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink>
-                                            <Link to='/contact'>Contact</Link>
+                                        <NavLink href='/contact'>
+                                            Contact
                                          </NavLink>
                                     </NavItem>
                                 </Nav>

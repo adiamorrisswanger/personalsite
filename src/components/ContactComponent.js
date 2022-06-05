@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Form, FormGroup } from "reactstrap";
 
 function Contact() {
-    const [form, setForm] = useState(null)
-    const values = [];
+   /*  const [form, setForm] = useState(null)
+    const values = []; */
 
     return (
         <div className='container'>
