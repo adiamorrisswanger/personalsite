@@ -1,12 +1,12 @@
 
+
 .home {
   margin: auto;
   padding: 100px 250px;
   border: 50px;
   text-align: center;
   background-color: #FFFFFF;
-  font-family: 'Oswald', 'Open Sans', sans-serif;
-  
+
 }
 
 .header {
@@ -33,13 +33,10 @@
   padding: 20px;
   margin: 10px;
 }
+
 a:link {
   color: #3a3b42; 
   text-decoration: none;
-}
-/* Figure out why this is still default. */
-a:hover {
-  color: #9b7070;
 }
 
 a:visited {
@@ -50,45 +47,42 @@ a:visited {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(151, 151, 151)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-
+.navbar {
+  background-color: white;
+}
 
 /* CARDS */
-.card-img-overlay .card-title {
-  color: whitesmoke;
-  background-color: rgba(0, 0, 0, 0.5);
-  
-}
-
-.card-img-overlay .card-subtitle {
-  color: whitesmoke;
-  background-color: rgba(0, 0, 0, 0.5);
 
 
-}
 
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;400&display=swap');
+
 
 
 /* Figure out why this isn't changing */
-.h1 {
+
+h1, h2, h3, h4 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
   font-size:x-large;
 }
 
-.h2 {
+h2 {
   font-size: 36px;
 }
 
-.h3 {
+h3 {
   font-size: 24px;
 }
 
-.h4 {
+h4 {
   font-size: 12px;
 }
 
-.p {
+p {
   font-size: 18px;
 }
 

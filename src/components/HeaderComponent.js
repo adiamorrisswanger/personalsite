@@ -21,7 +21,7 @@ class Header extends Component {
 //To Do: NavbarBrand logo
     render() {
         return (
-                <Navbar sticky='top' expand='md'>
+                <Navbar sticky='top' expand='md' light>
                         <NavbarToggler onClick={this.toggleNav} />
                         
                         {/* <NavbarBrand href='/'>
