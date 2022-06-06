@@ -17,6 +17,9 @@
   border: 10px;
 }
 
+.portfolio {
+  padding: 50px;
+}
 
 .footer {
   padding: 75px;
@@ -25,9 +28,17 @@
   color: whitesmoke;
 }
 
-.footer div {
+.footer-bottom-text {
   position: relative;
   top: 20px;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:visited {
+  color: whitesmoke
 }
 
 .div {
@@ -67,11 +78,15 @@ a:visited {
   font-weight: 300;
 }
 
+ul.square-bullets {
+  list-style-type: square;
+}
+
+div.bottom {
+  vertical-align: bottom;
+}
 
 /* FONTS */
-
-
-
 
 /* Figure out why this isn't changing */
 
