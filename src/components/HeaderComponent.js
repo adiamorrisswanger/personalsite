@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavItem, NavbarToggler, Collapse, NavLink, NavbarBrand } from 'reactstrap';
+import { Nav, Navbar, NavItem, NavbarToggler, Collapse, NavLink } from 'reactstrap';
 
 
 class Header extends Component {
@@ -18,12 +18,15 @@ class Header extends Component {
             isNavOpen: !this.state.isNavOpen
         });
     }
-
+//To Do: NavbarBrand logo
     render() {
         return (
-                <Navbar sticky='top' expand='md' fluid>
-                    <NavbarBrand href='/'><img src='./assets/initials-logo-6-3-22.png' alt='AMS' width='30' height='30'/></NavbarBrand>
+                <Navbar sticky='top' expand='md'>
                         <NavbarToggler onClick={this.toggleNav} />
+                        
+                        {/* <NavbarBrand href='/'>
+                                <p>AMS</p>
+                        </NavbarBrand> */}
                             <Collapse isOpen={this.state.isNavOpen} navbar>
                                 <Nav navbar>
                                     <NavItem>

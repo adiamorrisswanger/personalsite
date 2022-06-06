@@ -1,16 +1,20 @@
 import React, { useState } from 'react';
 import { Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 
 function Home() {
 
-    const [title, setTitle] = useState(null)
-    const values = ['Dancer','Dog Trainer', 'Non Profit Admin', 'Actor', 'Choreographer', 'TV Host', 'Cater Waiter', 'Tour Guide', 'Office Manager', 'Education Director'];
+    const [title, setTitle] = useState('_______')
+    const values = ['a dancer','a dog trainer', 'a nonprofit admin', 'an actor', 'a choreographer', 'a TV host', 'a cater waiter', 'a tour guide', 'an office manager', 'an education director', 'a telemarketer', 'a mom', 'a cashier'];
 
     return (
         <div className='home'>
             <div>
-                <h1 tabIndex={0}>Adia Morris Swanger | Web Developer <Button outline color='secondary' onClick={() => setTitle(values[Math.floor(Math.random() * values.length)])}>and...</Button> {title}</h1>
+                <h1 tabIndex={0}>Adia Morris Swanger | Web Developer</h1> 
+                <h2>Hi!</h2>
+                <p>I'm Adia. I'm a problem-solver and a maker, and my <Link to='/portfolio'>latest work</Link> is in web development. I've also been</p>
+                <Button outline color='info' onClick={() => setTitle(values[Math.floor(Math.random() * values.length)])}>{title}.</Button> 
                 
             </div>
             

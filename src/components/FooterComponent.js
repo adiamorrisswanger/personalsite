@@ -5,7 +5,7 @@ function Footer() {
     return(
         <div className='footer'>
              <div>
-                 <div className='mt-20'>
+                 <div className=''>
                     Designed and created by Adia Morris Swanger
                  </div>
                  
