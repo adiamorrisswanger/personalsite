@@ -19,7 +19,8 @@
 
 
 .footer {
-  padding: 50px;
+  padding: 75px;
+  margin-top: 20px;
   background-color: #3a3b42;
   color: whitesmoke;
 }
@@ -53,6 +54,18 @@ a:visited {
 
 /* CARDS */
 
+.card {
+  border: 3px solid #3a3b42;
+
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-subtitle {
+  font-weight: 300;
+}
 
 
 /* FONTS */
@@ -67,7 +80,8 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size:x-large;
+  font-size: 48px;
+  text-align: center;
 }
 
 h2 {

@@ -12,8 +12,8 @@ function Home() {
         <div className='home'>
             <div>
                 <h1 tabIndex={0}>Adia Morris Swanger | Web Developer</h1> 
-                <h2>Hi!</h2>
-                <p>I'm Adia. I'm a problem-solver and a maker, and my <Link to='/portfolio'>latest work</Link> is in web development. I've also been</p>
+                
+                <p tabIndex={0}>I'm Adia. I'm a problem-solver and a maker, and my <Link to='/portfolio'>latest work</Link> is in web development. I've also been</p>
                 <Button outline color='info' onClick={() => setTitle(values[Math.floor(Math.random() * values.length)])}>{title}.</Button> 
                 
             </div>
