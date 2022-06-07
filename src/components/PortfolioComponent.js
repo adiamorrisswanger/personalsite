@@ -8,14 +8,14 @@ function Portfolio() {
 <div className='container portfolio'>
     <div className='row'> 
         <div className='col-md-12 portfolio'>
-            <h1>Portfolio Projects</h1>
+            <h2>Portfolio Projects</h2>
         </div>
         <div className='col-md-4 d-flex align-items-stretch'>
             <Card>
                 <CardBody className='d-flex flex-column'>
-                    <a href='/'><CardImg alt='Screen capture of Work of Art: Interactive page' src='./assets/images/woa-screencapture-6-3-22.png' width='100%' tabIndex={0}/></a>
+                    <a href='portfolio/woa'><CardImg alt='Screen capture of Work of Art: Interactive page' src='./assets/images/woa-screencapture-6-3-22.png' width='100%' tabIndex={0}/></a>
                         <CardTitle>
-                            Work of Art: Interactive
+                            <a href='portfolio/woa'>Work of Art: Interactive</a>
                             </CardTitle>
                         <CardSubtitle>
                             A full stack site using React and Node, designed to expand on the Work of Art: Business Skills for Artists curriculum by <a href='https://springboardforthearts.org' rel='noreferrer'>Springboard for the Arts.</a>
@@ -31,9 +31,9 @@ function Portfolio() {
         <div className='col-md-4 d-flex align-items-stretch'>
             <Card>
                 <CardBody className='d-flex flex-column'>
-                <CardImg alt='' src='./assets/images/campsiteresscreenshot.png' width='100%' tabIndex={0}/>
+                <a href='portfolio/camp'><CardImg alt='' src='./assets/images/campsiteresscreenshot.png' width='100%' tabIndex={0}/></a>
                     <CardTitle>
-                        Campsite Reservation Site
+                    <a href='portfolio/camp'>Campsite Reservation Site</a>
                     </CardTitle>
                     <CardSubtitle>
                         A React site for booking campsites, choosing favorites, and leaving comments.
@@ -48,9 +48,9 @@ function Portfolio() {
         <div className='col-md-4 d-flex align-items-stretch'>
             <Card>
                 <CardBody>     
-                <CardImg alt='' src='./assets/images/PuzzleGameScreenshot.png' width='100%' tabIndex={0}/> 
+                <a href='portfolio/puzzle'><CardImg alt='' src='./assets/images/PuzzleGameScreenshot.png' width='100%' tabIndex={0}/> </a>
                 <CardTitle>
-                    Puzzle Cam Game
+                    <a href='portfolio/puzzle'>Puzzle Cam Game</a>
                 </CardTitle>
                     <CardSubtitle> 
                         A vanilla javascript exercise that creates a puzzle out of the users camera image.

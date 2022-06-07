@@ -2,7 +2,7 @@
 
 .home {
   margin: auto;
-  padding: 100px 250px;
+  padding: 50px 25px;
   border: 50px;
   text-align: center;
   background-color: #FFFFFF;
@@ -18,7 +18,7 @@
 }
 
 .portfolio {
-  padding: 50px;
+  padding: 20px;
 }
 
 .footer {
@@ -67,15 +67,19 @@ a:visited {
 /* CARDS */
 
 .card {
-  border: 3px solid #3a3b42;
+  border: 1px solid #3a3b42;
 
 }
 
 .card-title {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .card-subtitle {
+  font-weight: 300;
+}
+
+.card-text {
   font-weight: 300;
 }
 
@@ -102,6 +106,8 @@ h1 {
 
 h2 {
   font-size: 36px;
+  color: #5abfbf;
+  text-align: center;
 }
 
 h3 {
@@ -116,6 +122,11 @@ p {
   font-size: 18px;
 }
 
+/* SOCIAL ICONS */
+
+.social-icon {
+  color: white;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

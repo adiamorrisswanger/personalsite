@@ -11,9 +11,11 @@ function Home() {
     return (
         <div className='home'>
             <div>
-                <h1 tabIndex={0}>Adia Morris Swanger | Web Developer</h1> 
+                <h1>Adia Morris Swanger</h1>
+                <h2>Web Developer</h2>
                 
-                <p tabIndex={0}>I'm Adia. I'm a problem-solver and a maker, and my <Link to='/portfolio'>latest work</Link> is in web development. I've also been 
+                <p tabIndex={0}>Hi, I'm Adia. Like "Nadia", no "N".</p> 
+                <p>I'm a problem-solver and a maker, and my <Link to='/portfolio'>latest work</Link> is in web development. I've also been 
                 <Button onClick={() => setTitle(values[Math.floor(Math.random() * values.length)])}>{title}.</Button> 
                 </p>
             </div>

@@ -10,7 +10,7 @@ import Puzzle from './PuzzleComponent';
 import { Routes, Route } from 'react-router-dom'; 
 
 
-function Main() {
+function Main() { 
 
         return (
             <div>
@@ -18,9 +18,9 @@ function Main() {
                 <Routes>
                     <Route index path='/' element={<Home />} />
                     <Route path='portfolio' element={<Portfolio />} />
-                        <Route path='portolio/woa' element={<WorkOfArt />} />
+                        <Route path='portfolio/woa' element={<WorkOfArt />} />
                         <Route path='portfolio/camp' element={<Camp />} />
-                        <Route path='portoflio/puzzle' element={<Puzzle />} />
+                        <Route path='portfolio/puzzle' element={<Puzzle />} />
                     <Route path='contact' element={<Contact />} />
                     
                 </Routes>

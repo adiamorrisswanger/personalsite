@@ -8,19 +8,20 @@ function Footer() {
         <div className='footer'>
              <div className='container'>
                     <div className='row'>
-                        <div className='col-md-5'>
-                            Designed and created by Adia Morris Swanger
+                        <div className='col-sm-2'>
+                            <div>
+                                <a className='btn btn-social-icon' href='https://www.linkedin.com/in/adia-morris-swanger/'><i className="fa fa-brands fa-linkedin"></i></a> LinkedIn
+                            </div>
+                            <div>
+                                <a className='btn btn-social-icon' href='https://github.com/adiamorrisswanger'><i className="fa fa-brands fa-github" ></i></a> GitHub
+                            </div>
+                            <div>
+                                <a className='btn btn-social-icon' href='https://twitter.com/longtallsallie'><i className="fa fa-brands fa-twitter-square social-icon"></i></a> Twitter
+                            </div>
                         </div>
-                        <div className='col-lg-1'>
-                            <a href='https://www.linkedin.com/in/adia-morris-swanger/'><i class="fa-brands fa-linkedin">LinkedIn</i></a>
-                        </div>
-                        <div className='col-lg-1'>
-                            <a href='https://github.com/adiamorrisswanger'>GitHub</a>
-                        </div>
-                        <div className='col-lg-1'>
-                            <a href='https://twitter.com/longtallsallie'><i className="fa-brands fa-twitter">Twitter</i></a>
-                        </div>
-                </div>
+
+                        
+                    </div>
             </div>
         </div>
        
