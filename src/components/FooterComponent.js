@@ -12,13 +12,13 @@ function Footer() {
                             Designed and created by Adia Morris Swanger
                         </div>
                         <div className='col-lg-1'>
-                            <a href='https://www.linkedin.com/in/adia-morris-swanger/'>LinkedIn</a>
+                            <a href='https://www.linkedin.com/in/adia-morris-swanger/'><i class="fa-brands fa-linkedin">LinkedIn</i></a>
                         </div>
                         <div className='col-lg-1'>
                             <a href='https://github.com/adiamorrisswanger'>GitHub</a>
                         </div>
                         <div className='col-lg-1'>
-                            <a href='https://twitter.com/longtallsallie'><i className="fa-brands fa-twitter fa-lg" /></a>
+                            <a href='https://twitter.com/longtallsallie'><i className="fa-brands fa-twitter">Twitter</i></a>
                         </div>
                 </div>
             </div>

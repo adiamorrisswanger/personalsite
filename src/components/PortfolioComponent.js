@@ -13,7 +13,7 @@ function Portfolio() {
         <div className='col-md-4 d-flex align-items-stretch'>
             <Card>
                 <CardBody className='d-flex flex-column'>
-                    <a href='woa-screencapture-6-3-22.png'><CardImg alt='' src='./assets/images/woa-screencapture-6-3-22.png' width='100%' tabIndex={0}/></a>
+                    <a href='/'><CardImg alt='Screen capture of Work of Art: Interactive page' src='./assets/images/woa-screencapture-6-3-22.png' width='100%' tabIndex={0}/></a>
                         <CardTitle>
                             Work of Art: Interactive
                             </CardTitle>
@@ -22,8 +22,8 @@ function Portfolio() {
                         </CardSubtitle>
                             <ul className='square-bullets'>
                                 <li><CardLink href='#' tabIndex={0}>Video</CardLink></li>
-                                <li><CardLink href='https://github.com/adiamorrisswanger/work-of-art-client.git' tabIndex={0}>Front End GitHub Link</CardLink></li>
-                                <li><CardLink href='https://github.com/adiamorrisswanger/workOfArtServer.git' tabIndex={0}>Back End GitHub Link</CardLink></li>
+                                <li><CardLink href='https://github.com/adiamorrisswanger/work-of-art-client.git' tabIndex={0}>Front End GitHub</CardLink></li>
+                                <li><CardLink href='https://github.com/adiamorrisswanger/workOfArtServer.git' tabIndex={0}>Back End GitHub</CardLink></li>
                             </ul>
                 </CardBody>
             </Card>
@@ -40,7 +40,7 @@ function Portfolio() {
                     </CardSubtitle>  
                         <ul className='square-bullets'>
                             <li><CardLink href='#' tabIndex={0}>Video</CardLink></li>
-                            <li><CardLink href='https://github.com/adiamorrisswanger/react-ncs.git'tabIndex={0}>GitHub Link</CardLink></li>
+                            <li><CardLink href='https://github.com/adiamorrisswanger/react-ncs.git'tabIndex={0}>GitHub</CardLink></li>
                         </ul>
                 </CardBody>
             </Card>
@@ -57,7 +57,7 @@ function Portfolio() {
                     </CardSubtitle>
                 <ul className='square-bullets'>
                     <li><CardLink href='#' tabIndex={0}>Video Walkthrough</CardLink></li>
-                    <li><CardLink href='https://github.com/adiamorrisswanger/puzzle-game-practice.git' tabIndex={0}>GitHub Link</CardLink></li>
+                    <li><CardLink href='https://github.com/adiamorrisswanger/puzzle-game-practice.git' tabIndex={0}>GitHub</CardLink></li>
                 </ul>
                 </CardBody>
             </Card>
