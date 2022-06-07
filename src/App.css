@@ -35,10 +35,11 @@
 
 .footer a {
   color: white;
+  text-align: right;
 }
 
 .footer a:visited {
-  color: whitesmoke
+  color: whitesmoke;
 }
 
 .div {
