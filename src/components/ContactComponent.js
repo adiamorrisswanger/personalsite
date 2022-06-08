@@ -39,17 +39,16 @@ function Contact() {
         
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if(values.name && values.email && values.message) {
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if (values.name && values.email && values.message) {
             setValid(true);
-            console.log(valid);
-            setSubmitted(true);
-            alert('Thanks for your message!' + values);
-            console.log({values});
+        }
+        setSubmitted(true);
+        alert('You submitted\n' + JSON.stringify(values));
         } 
         
-    } 
+ 
 
 
 
@@ -98,7 +97,7 @@ function Contact() {
                             value={values.message}
                             onChange={handleMessageInputChange}
                         />
-                        {submitted && !values.text &&<span className='span-error' id='message-error'>Please enter your message.</span>}
+                        {submitted && !values.message &&<span className='span-error' id='message-error'>Please enter your message.</span>}
                     </FormGroup>
                     <Button type='submit'>Submit</Button>
                     
