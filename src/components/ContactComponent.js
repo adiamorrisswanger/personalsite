@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, FormGroup, Input, Label, Button, Toast } from 'reactstrap';
+import { Form, FormGroup, Input, Label, Button } from 'reactstrap';
 import emailjs from 'emailjs-com';
 
 
@@ -50,6 +50,7 @@ function Contact() {
         event.preventDefault();
         if (values.name && values.email && values.message) {
             setValid(true);
+            console.log(valid);
         }
         setSubmitted(true);
         emailjs.send('default_service', 'template_jdxxi5d', templateParams, '_M00OloFEL2HoQnVA')
