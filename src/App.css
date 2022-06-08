@@ -66,11 +66,6 @@ a:visited {
 
 /* CARDS */
 
-.card {
-  border: 1px solid #3a3b42;
-
-}
-
 .card-title {
   font-weight: 500;
 }
@@ -127,6 +122,18 @@ p {
 .social-icon {
   color: white;
 }
+
+/* FORM */
+
+.success-message {
+  background-color: white;
+  padding: 15px;
+}
+
+.span-error {
+  color: red;
+}
+/* MISC */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

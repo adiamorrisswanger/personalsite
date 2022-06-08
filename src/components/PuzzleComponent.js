@@ -20,7 +20,7 @@ function Puzzle() {
                                     Long description
                                 </CardText>
                             <ul className='square-bullets'>
-                                <li><CardLink href='#' tabIndex={0}>Video Walkthrough</CardLink></li>
+                                <li><CardLink href='#' tabIndex={0}>Video</CardLink></li>
                                 <li><CardLink href='https://github.com/adiamorrisswanger/puzzle-game-practice.git' tabIndex={0}>GitHub</CardLink></li>
                             </ul>
                         </CardBody>

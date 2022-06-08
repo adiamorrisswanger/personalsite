@@ -6,7 +6,7 @@ function WorkOfArt() {
         <div className='container'>
             <h2>Portfolio Project - Work of Art: Interactive</h2>
             <Card>
-                <CardBody className='col-lg-8'>
+                <CardBody className='col-lg-10 mx-auto'>
                     <CardImg alt='Screen capture of Work of Art: Interactive page' src='./assets/images/woa-screencapture-6-3-22.png' width='100%' tabIndex={0}/>
                         <CardTitle>
                             Work of Art: Interactive
