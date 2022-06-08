@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Form, FormGroup, Input, Label, Button } from 'reactstrap';
+import { Form, FormGroup, Input, Label, Button, Toast } from 'reactstrap';
+import emailjs from 'emailjs-com';
 
 
 function Contact() {
@@ -13,6 +14,12 @@ function Contact() {
    const [submitted, setSubmitted ] = useState(false);
 
    const [ valid, setValid ] = useState(false);
+
+   const templateParams = {
+    from_name: values.name + "(" + values.email + ")",
+    to_name: 'Adia',
+    message: values.message
+}
 
     const handleNameInputChange = (event) => {
         event.persist();
@@ -45,11 +52,18 @@ function Contact() {
             setValid(true);
         }
         setSubmitted(true);
-        alert('You submitted\n' + JSON.stringify(values));
-        } 
+        emailjs.send('default_service', 'template_jdxxi5d', templateParams, '_M00OloFEL2HoQnVA')
+        .then(
+            function(response) {
+                alert('Your message successfully sent!');
+                console.log(response.status, response.text);
+            }, (err) => {
+                console.log('Failed...', err);
+            }
+        );    
+    } 
         
- 
-
+      
 
 
     return (
@@ -57,7 +71,7 @@ function Contact() {
             <h2>Get In Touch</h2>
             <div>
                 <Form onSubmit={handleSubmit}>
-                    {submitted && <div className='success-message'>Thanks for your message!</div>}
+                    {/* {submitted && <div className='success-message'>Thanks for your message!</div>} */}
                     <FormGroup>
                         <Label for='name'>
                             Name
