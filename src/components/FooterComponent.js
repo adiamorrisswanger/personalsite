@@ -8,9 +8,9 @@ function Footer() {
         <div className='footer'>
              <div className='container'>
                     <div className='row'>
-                        <div className='col-sm-2 twitter-link'>
+                        <div className='col-sm-2'>
                             <div>
-                                <a className='btn btn-social-icon' href='https://www.linkedin.com/in/adia-morris-swanger/'><i className="fa fa-brands fa-linkedin"></i> LinkedIn</a> 
+                                <a className='btn btn-social-icon' href='https://www.linkedin.com/in/adia-morris-swanger/'><i className="fa fa-brands fa-linkedin" ></i> LinkedIn</a> 
                             </div>
                             <div>
                                 <a className='btn btn-social-icon' href='https://github.com/adiamorrisswanger'><i className="fa fa-brands fa-github" ></i> GitHub</a> 
