@@ -12,7 +12,7 @@ function Footer() {
         <div className='footer'>
              <div className='container'>
                     <div className='row'>
-                        <div className='col-lg-2'>
+                        <div className='col-sm-2'>
                             <div>
                                 <a className='btn btn-social-icon' href='https://www.linkedin.com/in/adia-morris-swanger/'><i className="fa fa-brands fa-linkedin" ></i> LinkedIn</a> 
                             </div>
@@ -23,7 +23,7 @@ function Footer() {
                                 <a className='btn btn-social-icon' href='https://twitter.com/longtallsallie'><i className="fa fa-brands fa-twitter-square social-icon" ></i> Twitter</a> 
                             </div>
                         </div>
-                        <div className='col-lg-8 job-button'>
+                        <div className='col-sm-10'>
                             I've also been...<Button onClick={() => setTitle(values[Math.floor(Math.random() * values.length)])}>{title}.</Button> 
                         </div>
                         

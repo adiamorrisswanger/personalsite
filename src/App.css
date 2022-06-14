@@ -86,9 +86,27 @@ div.bottom {
   vertical-align: bottom;
 }
 
+div.imageborder {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  padding: 3px;
+  line-height: 0;
+  border: 10px solid #3a3b42;
+  background-color: #FFFFFF;
+}
+
+img.circleborder {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
 .job-button {
   float: right;
-  text-align: right;
+  margin-top: 78px;
+  margin-left: 50px;
 }
 /* FONTS */
 

@@ -13,8 +13,8 @@ function Home() {
                         <h1>Adia Morris Swanger</h1>
                         <h2>Web Developer</h2>
                     </div>
-                    <div className='col-lg-3'>
-                        <img src='./assets/images/ProfilePic2.jpg' width='200' alt='Head and shoulders of Adia, salt and pepper hair, brown eyes, brown skin, smiling, wearing polka dot shirt' />
+                    <div className='col-lg-3 imageborder'>
+                        <img className='circleborder' src='./assets/images/ProfilePic2.jpg' width='200' alt='Head and shoulders of Adia, salt and pepper hair, brown eyes, brown skin, smiling, wearing polka dot shirt' />
                     </div>
                 </div>
                 <div className='row mx-auto'>
