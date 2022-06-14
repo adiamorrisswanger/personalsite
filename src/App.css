@@ -33,7 +33,7 @@
   top: 20px;
 }
 
-.footer a {
+.footer a:link {
   color: white;
   text-align: right;
 }
@@ -86,9 +86,12 @@ div.bottom {
   vertical-align: bottom;
 }
 
+.job-button {
+  float: right;
+  text-align: right;
+}
 /* FONTS */
 
-/* Figure out why this isn't changing */
 
 h1, h2, h3, h4 {
   font-family: 'Oswald', sans-serif;

@@ -1,23 +1,40 @@
-import React, { useState } from 'react';
-import { Button } from 'reactstrap';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 
 function Home() {
 
-    const [title, setTitle] = useState('_______')
-    const values = ['a dancer','a dog trainer', 'a nonprofit admin', 'an actor', 'a choreographer', 'a TV host', 'a cater waiter', 'a tour guide', 'an office manager', 'an education director', 'a telemarketer', 'a cashier'];
-
+   
     return (
         <div className='home'>
-            <div>
-                <h1>Adia Morris Swanger</h1>
-                <h2>Web Developer</h2>
+            <div className='container'>
+                <div className='row'>
+                    <div className='col-lg-6'>
+                        <h1>Adia Morris Swanger</h1>
+                        <h2>Web Developer</h2>
+                    </div>
+                    <div className='col-lg-3'>
+                        <img src='./assets/images/ProfilePic2.jpg' width='200' alt='Head and shoulders of Adia, salt and pepper hair, brown eyes, brown skin, smiling, wearing polka dot shirt' />
+                    </div>
+                </div>
+                <div className='row mx-auto'>
+                    <div className='col-lg-4'>
+                        
+                    </div>
+                    <div className='col-lg-3'>
+                        <p tabIndex={0}>Hi, I'm Adia. Like "Nadia", no "N".</p> 
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='col-lg-4'>
+
+                    </div>
+                <div className='col-lg-3'>
+                    <p>I'm a problem-solver and a maker, and my <Link to='/portfolio'>latest work</Link> is in web development.</p>
+                </div>
+                </div>
                 
-                <p tabIndex={0}>Hi, I'm Adia. Like "Nadia", no "N".</p> 
-                <p>I'm a problem-solver and a maker, and my <Link to='/portfolio'>latest work</Link> is in web development. I've also been... 
-                <Button onClick={() => setTitle(values[Math.floor(Math.random() * values.length)])}>{title}.</Button> 
-                </p>
+                
             </div>
             
         </div>
